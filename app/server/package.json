@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "dev": "concurrently \"npm run server\" \"npm start --prefix ../client/ \""
+  },
+  "author": "Oliver Goetz",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "aws-serverless-express": "^3.3.8",
+    "express": "^4.17.1",
+    "express-route": "^0.1.4"
+  }
+}
